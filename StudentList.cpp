@@ -47,12 +47,37 @@ int main(){
 }
 
 void add(vector<student*>* studentList){
-  student* temp = new student;
+  student* newStudent = new student;
+  int newId;
+  double newGPA;
+  char newFirstName;
+  char newLastName;
+  cout<<"Input ID:"<<endl;
+  cin>>newId;
+  cin.ignore();
+
+  cout<<"Input GPA:"<<endl;
+  cin>>newGPA;
+  cin.ignore();
+
+  cout<<"Input First Name:"<<endl;
+  cin>>newFirstName;
+  cin.ignore();
+
+  newStudent->GPA = newGPA;
+  newStudent->id = newId;
+  newStudent->firstName = strdup(newFirstName);
+  newStudent->lastName = strdup(newLastName);
+
+  student->push_back(newStudent);
+
   
 }
 void remove(vector<student*>* studentList){
   
 }
-void print(vector<student*>* lsstudentList){
-  
+void print(vector<student*>* studentList){
+  for(int i = 0; i < studentList.size(); i++){
+   
+  }
 }  

@@ -5,7 +5,7 @@
 #include <cctype>
 
 using namespace std;
-
+//John Elstad some time in 2016 Code is a student list that keeps track of students.
 struct student{
   double GPA;
   char* firstName;
